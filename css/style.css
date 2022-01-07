@@ -1,0 +1,315 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: default;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Navigation Bar Start */
+nav h1{
+    opacity: 0.7;
+    font-size: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    background-color: white;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin-left: 200px;
+    
+}
+nav ul li:not(:last-child){
+    margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+nav a:hover{
+    color: #FEBE10;
+}
+nav button{
+    position: absolute;
+    right: 10%;
+    height: 45px;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #f5ca65;
+    border-radius: 25px;
+    border: none;
+    margin: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s;
+}
+nav button:hover{
+    background-color: #FEBE10;
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.8);
+}
+/* Navigation Bar End */
+
+
+
+
+/* Main Section Start */
+.main{
+    height: 450px;
+    background-color: white;
+    cursor: default;
+}
+    /* Main => divOne (text area) */
+.main-childOne{
+    height: 450px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.main-textOne{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+.p-up{
+    color: tomato;
+}
+.main-textOne p{
+    font-size: 20px;
+    font-family: revert;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+}
+.main-textOne h1{
+    font-size: 40px;
+    font-family: -webkit-pictograph;
+    letter-spacing: 1px;
+}
+.main-btnOne{
+    display: block;
+    position: absolute;
+    bottom: -70px;
+}
+.main-btnOne button{
+    height: 50px;
+    width: 130px;
+    font-size: 18px;
+    border-radius: 20px;
+    color: black;
+    transition: 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0 4px 1px black;
+    border: 1px black solid;
+}
+.main-btnOne button:not(:last-child){
+    margin-right: 25px;
+}
+.main-firstBtn{
+    background-color: #ff9e4f;
+}
+.main-firstBtn:hover{
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 0 4px tomato, 0 0 0 8px #FEBE10 ;
+}
+.main-secondBtn{
+    background-color: #FEBE10;
+}
+.main-secondBtn:hover{
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 0 4px tomato, 0 0 0 8px #FEBE10 ;
+}
+    /* Main => divTwo (image & circle area) */
+.main-childTwo{
+    height: 450px;
+    width: 50%;
+    float: right;
+    position: relative;
+}
+    /* img main design */
+.main-imageTwo img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    z-index: 100;
+}
+    /* circle design */
+.main-circleTwo{
+    height: 350px;
+    width: 350px;
+    background-color: #fd7231;
+    border-radius: 100% 100% 0 100%;
+    box-shadow: 0 0 0 80px #ff9e4f;
+    position: absolute;
+    bottom: -10px;
+    right: 80px;
+}
+/* Main Section Ended */
+
+
+
+
+/* About main Section started */
+    /* aboutMain => Image design */
+.aboutMain{
+    height: 350px;
+    background-color: #f8f6ea;
+    clip-path: ellipse(135% 100% at 78.9% 100%);
+}
+.img-aboutM{
+    height: 350px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.img-aboutM img{
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 16%;
+    left: 28%;
+}
+    /* aboutMain => Text design */
+.text-aboutM{
+    height: 350px;
+    width: 50%;
+    float: right;
+    position: relative;
+}
+.span-aboutM{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+.span-aboutM h1{
+    font-family: -webkit-pictograph;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.span-aboutM p{
+    font-size: 17px;
+    line-height: 1.4;
+    font-family: revert;
+}
+/* About main Section Ended */
+
+
+
+
+/* Display products Section started */
+.productMain{
+    height: 400px;
+}
+    /* Text */
+.text-pM{
+    height: 100px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.text-pM p{
+    color: tomato;
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: revert;
+    margin: 0;
+    padding-top: 25px;
+}
+.text-pM h1{
+    font-family: -webkit-pictograph;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 0;
+}
+    /* product image design */
+.images-pM{
+    height:300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product{
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 15px black;
+    margin-top: 5px;
+    font-family: -webkit-pictograph;
+    letter-spacing: 1px;
+    line-height: 0;
+}
+.product img{
+    height: 200px;
+    width: 325px;
+    border-radius: 15px 15px 0 0;
+}
+/* Display products Section Ended */
+
+
+
+
+/* Footer Started */
+footer{
+    height: 400px;
+    background-color: #17181c;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    cursor: default;
+}
+.footerDes{
+    z-index: 100;
+}
+.footerDes h1{
+    font-size: 40px;
+    opacity: 0.7;
+}
+.footerDes p{
+    font-size: 17px;
+    line-height: 1.5;
+}
+    /* Social links design */
+.social a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 2;
+    transition: 0.2s;
+}
+.fb:hover{
+    color:	#3f62a9;
+}
+.insta:hover{
+    color: #e6295f;
+}
+.twitter:hover{
+    color: #1d98e7;
+}
+.yt:hover{
+    color: 	#FF0000;
+}
+    /* Circle footer design */
+.circleF{
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    background-color: #fd7231;
+    border-radius: 0 100% 0 0;
+    box-shadow: 0 0 0 80px #ff9e4f;
+}
